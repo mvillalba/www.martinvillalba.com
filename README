@@ -3,10 +3,37 @@ Introduction
 These are the sources of my main personal website.  It gets turned into an
 actual website with the help of [Hyde](http://ringce.com/hyde "Hyde").
 
+You can reach me at: ehyde at codinghyde com
+
+
+Setup
+=====
+The buildout environment should be entirely self-contained,
+web server included.
+
+If you want to modify the website, clone the repository and run:
+% source bootstrap && buildout
+
+If you want to publish the website, push upstream (odin). Once uploaded, a
+server-side hook will run and do the following (publish.py):
+ 1) Clone repository to temp directory.
+ 2) Are buildout.cfg or nginx.conf any different from those used by the
+    currently running webserver instance?
+ 3) If so, stop web-server, pull repository, and run buildout.
+ 4) Else, just pull repository.
+ 5) Run hyde.
+ 6) Start web-server if not currently running.
+
 
 License
 ==========
-TODO
+Everything but the src/ directory is under the MIT/X11 license.
+All images, config files, and templates in src/ are licensed under the ???
+license. (TODO).
+All content (*.html) inside the src/ directory is under the CC-BY-3.0 license.
+
+MIT: See ./MIT.
+CC-BY-3.0: http://creativecommons.org/licenses/by/3.0/
 
 
 To Do
