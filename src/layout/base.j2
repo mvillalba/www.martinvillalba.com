@@ -6,7 +6,7 @@
   <meta name="author" content="{{ author.name }}" />
   <link rel="stylesheet" href="{{ media_url('styles/base.css') }}" type="text/css" media="screen" />
   <link rel="shortcut icon" type="image/png" href="{{ media_url('images/glider.png') }}" />
-  <title>{{ author.name }}</title>
+  <title>{{ author.name }}{% if resource.meta.title is defined %} - {{ resource.meta.title }}{% endif %}</title>
 </head>
 <body>
 {% filter markdown -%}
@@ -14,14 +14,14 @@
 {%- endfilter %}
 {% if resource.translations is defined %}
 <hr />
-<strong>Translations:</strong>
+<p><strong>Translations:</strong></p>
 <ul>
 {% for translation in resource.translations %}
   <li><a href="{{ translation.full_url }}">{{ languages[translation.meta.language] }}</a></li>
 {% endfor %}
 </ul>
 {% else %}
-<i>There are no translations available for this page.</i>
+<p><i>There are no translations available for this page.</i></p>
 {% endif %}
 </body>
 </html>
