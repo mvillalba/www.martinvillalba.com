@@ -1,0 +1,15 @@
+*.pyc
+*.pyo
+*.swp
+.installed.cfg
+dist
+build
+bin
+develop-eggs
+eggs
+downloads
+parts
+include
+lib
+lib64
+src/*.egg-info

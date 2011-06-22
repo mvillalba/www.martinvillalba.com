@@ -1,0 +1,24 @@
+Introduction
+==========
+These are the sources of my main personal website.  It gets turned into an
+actual website with the help of [Hyde](http://ringce.com/hyde "Hyde").
+
+
+License
+==========
+TODO
+
+
+To Do
+==========
+ - Layout
+ - Index
+ - About
+ - Projects
+ - Portfolio
+ - Blogs
+ - Contact
+ - Convert templates to HAML/SASS?
+ - Multi-lingual support?
+ - Translate pages?
+
