@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="{{ author.name }}" />
+  <link rel="stylesheet" href="{{ media_url('styles/base.css') }}" type="text/css" media="screen" />
+  <link rel="shortcut icon" type="image/png" href="{{ media_url('images/glider.png') }}" />
+  <title>{{ author.name }}</title>
+</head>
+<body>
+{% filter markdown -%}
+{% block content %}{% endblock %}
+{%- endfilter %}
+{% if resource.translations is defined %}
+<hr />
+<strong>Translations:</strong>
+<ul>
+{% for translation in resource.translations %}
+  <li><a href="{{ translation.full_url }}">{{ languages[translation.meta.language] }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<i>There are no translations available for this page.</i>
+{% endif %}
+</body>
+</html>

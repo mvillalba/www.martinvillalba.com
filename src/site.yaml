@@ -1,0 +1,26 @@
+mode: production
+media_root: assets
+media_url: /assets
+base_url: /
+deploy_root: ../nginx/site
+template: hyde.ext.templates.jinja.Jinja2Template
+plugins:
+  - hyde.ext.plugins.meta.MetaPlugin
+  - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+  - hyde.ext.plugins.blockdown.BlockdownPlugin
+  - hyde.ext.plugins.languages.LanguagePlugin
+  - hyde.ext.plugins.syntext.SyntextPlugin
+  - hyde.ext.plugins.textlinks.TextlinksPlugin
+context:
+  data:
+    author:
+      name: "Martín Raúl Villalba"
+      url: "http://www.martinvillalba.com/"
+      email: "martin@martinvillalba.com"
+    languages:
+      en: "English"
+      es: "Español"
+      ja: "日本語"
+meta:
+  nodemeta: meta.yaml
+  default_block: content

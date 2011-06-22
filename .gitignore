@@ -14,3 +14,4 @@ lib
 lib64
 src/*.egg-info
 nginx/
+src/.hyde_deps
