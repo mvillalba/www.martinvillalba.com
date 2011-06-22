@@ -13,3 +13,4 @@ include
 lib
 lib64
 src/*.egg-info
+nginx/
