@@ -21,6 +21,39 @@ context:
       en: "English"
       es: "Español"
       ja: "日本語"
+  menu:
+    en:
+      -
+        name: "Home"
+        url: /en/
+      -
+        name: "About"
+        url: /en/about.html
+      -
+        name: "Projects"
+        url: /en/projects.html
+      -
+        name: "Blog"
+        url: /en/blog/
+      -
+        name: "Contact"
+        url: /en/contact.html
+    es:
+      -
+        name: "Portada"
+        url: /es/
+      -
+        name: "Sobre mi"
+        url: /es/sobre-mí.html
+      -
+        name: "Proyectos"
+        url: /es/proyectos.html
+      -
+        name: "Blog"
+        url: /es/blog/
+      -
+        name: "Contáctame"
+        url: /es/contáctame.html
 meta:
   nodemeta: meta.yaml
   default_block: content
