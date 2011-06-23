@@ -1,5 +1,5 @@
 #!/bin/sh
-python virtualenv.py --no-site-packages --distribute --prompt=\[www.martinvillalbe.com\] .
+python virtualenv.py --no-site-packages --distribute --prompt=\[www.martinvillalba.com\] .
 rm distribute-*.tar.gz
 source bin/activate
 python bootstrap.py -d
