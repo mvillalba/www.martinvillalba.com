@@ -25,3 +25,5 @@ Thins to consider
    If it's not on the list, it's not me...
  * Implement some ideas from http://stackoverflow.com/questions/1316100/what-contents-should-a-professional-programmers-website-have.
  * GPG Keys section (fingerprints, public keys).
+ * Move language metadata from site.yaml to content/LANG/meta.yaml.
+ * Customize blueprint project.
