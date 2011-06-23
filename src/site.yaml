@@ -21,39 +21,42 @@ context:
       en: "English"
       es: "Español"
       ja: "日本語"
-  menu:
-    en:
-      -
-        name: "Home"
-        url: /en/
-      -
-        name: "About"
-        url: /en/about.html
-      -
-        name: "Projects"
-        url: /en/projects.html
-      -
-        name: "Blog"
-        url: /en/blog/
-      -
-        name: "Contact"
-        url: /en/contact.html
-    es:
-      -
-        name: "Portada"
-        url: /es/
-      -
-        name: "Sobre mi"
-        url: /es/sobre-mí.html
-      -
-        name: "Proyectos"
-        url: /es/proyectos.html
-      -
-        name: "Blog"
-        url: /es/blog/
-      -
-        name: "Contáctame"
-        url: /es/contáctame.html
+    menu:
+      en:
+        -
+          name: "Home"
+          url: /en/
+        -
+          name: "About"
+          url: /en/about.html
+        -
+          name: "Projects"
+          url: /en/projects.html
+        -
+          name: "Blog"
+          url: /en/blog/
+        -
+          name: "Contact"
+          url: /en/contact.html
+      es:
+        -
+          name: "Portada"
+          url: /es/
+        -
+          name: "Sobre mí"
+          url: /es/sobre-mí.html
+        -
+          name: "Proyectos"
+          url: /es/proyectos.html
+        -
+          name: "Blog"
+          url: /es/blog/
+        -
+          name: "Contáctame"
+          url: /es/contáctame.html
+    footer:
+      en: "The contents of this website are licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">Creative Commons Attribution 3.0 Unported License</a>."
+      es: "El contenido de esta página web está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">licencia Creative Commons Reconocimiento 3.0 Unported</a>."
 meta:
   nodemeta: meta.yaml
   default_block: content

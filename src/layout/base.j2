@@ -1,27 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{% if resource.meta.language is defined %}{{ resource.meta.language }}{% else %}en{% endif %}" lang="{% if resource.meta.language is defined %}{{ resource.meta.language }}{% else %}en{% endif %}">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="author" content="{{ author.name }}" />
+  <!-- Blueprint CSS Framework -->
+  <link rel="stylesheet" href="{{ media_url('styles/blueprint/screen.css') }}" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="{{ media_url('styles/blueprint/print.css') }}" type="text/css" media="print" />
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ media_url('styles/blueprint/ie.css') }}" type="text/css" media="screen, projection" />
+  <![endif]-->
+
   <link rel="stylesheet" href="{{ media_url('styles/base.css') }}" type="text/css" media="screen" />
   <link rel="shortcut icon" type="image/png" href="{{ media_url('images/glider.png') }}" />
   <title>{{ author.name }}{% if resource.meta.title is defined %} - {{ resource.meta.title }}{% endif %}</title>
 </head>
 <body>
-{% filter markdown -%}
-{% block content %}{% endblock %}
-{%- endfilter %}
-{% if resource.translations is defined %}
-<hr />
-<p><strong>Translations:</strong></p>
-<ul>
-{% for translation in resource.translations %}
-  <li><a href="{{ translation.full_url }}">{{ languages[translation.meta.language] }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-<p><i>There are no translations available for this page.</i></p>
-{% endif %}
+    <div class="container">
+      <div class="span-21">
+        {% for item in menu[resource.meta.language] %}
+        <a href="{{ item.url }}" class="large menu">{{ item.name }}</a>{% if not loop.last %}&nbsp;|&nbsp;{% endif %}
+        {% endfor %}
+      </div>
+      <div class="prepend-2 span-1 last">
+      {% if resource.translations is defined %}
+        {% for translation in resource.translations %}
+        <a href="{{ translation.full_url }}" class="large"><img src="{{ media_url('images/flags/' + translation.meta.language + '.png') }}" alt="{{ languages[translation.meta.language] }}" /></a>
+        {% endfor %}
+      {% endif %}
+      </div>
+      <hr />
+      <div class="span-24">
+        {% filter markdown -%}
+        {% block content %}{% endblock %}
+        {%- endfilter %}
+      </div>
+      <hr />
+      <div class="span-24">
+        <p class="quiet footer">{% if resource.meta.language is defined %}{{ footer[resource.meta.language] }}{% else %}{{ footer[en] }}{% endif %}</p>
+      </div>
+    </div>
 </body>
 </html>
