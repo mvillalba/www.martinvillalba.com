@@ -19,12 +19,6 @@
 </head>
 <body>
     <div class="container">
-      <div class="span-24">
-        <br />
-      </div>
-      <div class="span-24">
-        <h1>{{ author.name }}</h1>
-      </div>
       <div class="span-21 quiet">
         {% for item in menu[resource.meta.language] %}
         <a href="{{ item.url }}" class="large menu">{{ item.name }}</a>{% if not loop.last %}&nbsp;&nbsp;|&nbsp;{% endif %}
