@@ -56,7 +56,7 @@ context:
           url: /es/contáctame.html
     footer:
       en: "The contents of this website are licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">Creative Commons Attribution 3.0 Unported License</a>."
-      es: "El contenido de esta página web está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">licencia Creative Commons Reconocimiento 3.0 Unported</a>."
+      es: "El contenido de esta página web está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/deed.es_ES\">licencia Creative Commons Reconocimiento 3.0 Unported</a>."
 meta:
   nodemeta: meta.yaml
   default_block: content
