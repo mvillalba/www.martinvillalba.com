@@ -1,6 +1,10 @@
 .menu {
 }
 
+h1 {
+  font-family: 'Droid Sans', arial, serif;
+}
+
 .footer {
   text-align: center;
 }
