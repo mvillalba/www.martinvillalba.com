@@ -25,7 +25,8 @@
       <div class="prepend-2 span-1 last">
       {% if resource.translations is defined %}
         {% for translation in resource.translations %}
-        <a href="{{ translation.full_url }}" class="large"><img src="{{ media_url('images/flags/' + translation.meta.language + '.png') }}" alt="{{ languages[translation.meta.language] }}" /></a>
+        <a href="{{ translation.full_url }}" class="large"><img src="{{ media_url('images/flags/' + translation.meta.language + '.png') }}"
+ alt="{{ languages[translation.meta.language] }}" /></a>
         {% endfor %}
       {% endif %}
       </div>

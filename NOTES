@@ -33,3 +33,9 @@ Thins to consider
    reference, mostly. This may include a file download section (private).
  * Put a photo of myself (about page). Use something like a summit picture.
  * Things I [don't] believe in (religion, politics, software, etc).
+
+Bugs
+====
+Non-ASCII file names cause weird encoding errors everywhere. Unicode handling in
+ hyde or Jinja2 is horribly broken. Added rewrite-based hack for the time being.
+ Should submit a patch.
