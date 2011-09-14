@@ -20,7 +20,6 @@ context:
     languages:
       en: "English"
       es: "Español"
-      ja: "日本語"
     menu:
       en:
         -
@@ -44,7 +43,7 @@ context:
           url: /es/
         -
           name: "Sobre mí"
-          url: /es/sobre-mí.html
+          url: /es/sobre-mi.html
         -
           name: "Proyectos"
           url: /es/proyectos.html
@@ -53,7 +52,7 @@ context:
 #          url: /es/blog/
         -
           name: "Contáctame"
-          url: /es/contáctame.html
+          url: /es/contactame.html
     footer:
       en: "The contents of this website are licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">Creative Commons Attribution 3.0 Unported License</a>."
       es: "El contenido de esta página web está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/deed.es_ES\">licencia Creative Commons Reconocimiento 3.0 Unported</a>."
