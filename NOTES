@@ -1,7 +1,7 @@
 Notes
 =====
 
-Thins to consider
+Things to consider
 -----------------
  * Portfolio/CV section.
  * Useful links section.
@@ -42,6 +42,9 @@ Thins to consider
    may be overkill for the simplest ones though.
  * On cooking, also post little techniques and tips, like how to crack an egg
    with your knuckles, or something.
+ * How about Hyde plugins to calculate my current age, generate my affiliate
+   and Web accounts pages, redirect (JS) based on language, and similar stuff.
+ * "Photos" menu item, with integration to public Picasa albums.
 
 
 App Engine
