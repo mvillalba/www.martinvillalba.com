@@ -52,6 +52,8 @@ Things to consider
    downloading, and updating. This includes a full download for editing. S3
    links should be generated via some plugin so that I can later on replace the
    backend with something else, should I ever need to.
+ * Further investigate Google Analytics.
+
 
 App Engine
 ----------
