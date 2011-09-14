@@ -47,7 +47,11 @@ Things to consider
  * "Photos" menu item, with integration to public Picasa albums.
  * Add last-edited timestamp at the bottom of every page (taken from YAML meta
    data on each page).
-
+ * For large media (photos, videos, assorted files) I'll need to use something
+   like S3, so I'll be needing a script to manage S3 media. That is, uploading,
+   downloading, and updating. This includes a full download for editing. S3
+   links should be generated via some plugin so that I can later on replace the
+   backend with something else, should I ever need to.
 
 App Engine
 ----------
