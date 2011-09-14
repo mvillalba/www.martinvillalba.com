@@ -2,6 +2,11 @@
 *.pyo
 *.swp
 .installed.cfg
+virtualenv.py
+bootstrap.py
+src/.coverage
+docs/build
+docs/source/.buildinfo
 dist
 build
 bin

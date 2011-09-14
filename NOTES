@@ -1,5 +1,8 @@
+Notes
+=====
+
 Thins to consider
-=================
+-----------------
  * Portfolio/CV section.
  * Useful links section.
  * Job offers/proposals/wanted section.
@@ -41,7 +44,7 @@ Thins to consider
    with your knuckles, or something.
 
 Bugs
-====
-Non-ASCII file names cause weird encoding errors everywhere. Unicode handling in
- hyde or Jinja2 is horribly broken. Added rewrite-based hack for the time being.
- Should submit a patch.
+----
+Non-ASCII file names cause weird encoding errors everywhere. Unicode handling
+in Hyde or Jinja2 is horribly broken. Added rewrite-based hack for the time
+ being. Should submit a patch.
