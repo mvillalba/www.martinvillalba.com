@@ -28,6 +28,10 @@ everything to Google App Engine.
 
 Don't forget to push the changes upstream (GitHub, Gitorious).
 
+Backup GIT repositories:
+http://repo.or.cz/w/www.martinvillalba.com.git
+https://gitorious.org/www-martinvillalba-com/www-martinvillalba-com
+
 
 License
 -------
