@@ -1,0 +1,19 @@
+application: www-martinvillalba-com
+version: 1
+runtime: python
+api_version: 1
+
+default_expiration: "1h"
+
+handlers:
+- url: /
+  static_files: static/index.html
+  upload: static/index.html
+- url: /(.*)/
+  static_files: static/\1/index.html
+  upload: static/(.*)/index.html
+- url: /(.*)/(.*)/
+  static_files: static/\1/\2/index.html
+  upload: static/(.*)/(.*)/index.html
+- url: /
+  static_dir: static

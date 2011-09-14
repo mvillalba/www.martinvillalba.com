@@ -19,14 +19,14 @@ If you want to modify the website, clone the repository and run:
 % source bootstrap
 % buildout
 
-When done editing, check everything looks fine with the included nginx Web
-server by running the following and checking your browser:
-NGINX-CMD
+When done editing, check everything looks fine with the development server by
+running the following and checking your browser:
+% ./develop
 
-If everything looks fine, run publish.py to re-build and upload everything to
-  Google App Engine.
+If everything looks fine, go ahead and run ./publish to re-build and upload
+everything to Google App Engine.
 
-Don't forget to push the changes upstream (GitHub).
+Don't forget to push the changes upstream (GitHub, Gitorious).
 
 
 License

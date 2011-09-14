@@ -1,0 +1,5 @@
+#!/bin/sh
+./make
+
+echo "Running development Web server..."
+python parts/gae/dev_appserver.py ./build

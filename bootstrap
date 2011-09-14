@@ -1,7 +1,7 @@
 #!/bin/sh
 # Take out the trash
 echo "Taking out the trash..."
-rm -rf virtualenv.py bootstrap.py bin develop-eggs eggs include lib parts .installed.cfg dist build downloads lib64 src/namecheap.egg-info docs/build docs/source/.buildinfo src/.coverage
+rm -rf virtualenv.py bootstrap.py bin develop-eggs eggs include lib parts .installed.cfg dist build downloads lib64
 
 # Fetch bootstrap files
 echo "Fetching bootstrap scripts..."
@@ -10,7 +10,7 @@ wget -q http://svn.zope.org/repos/main/zc.buildout/trunk/bootstrap/bootstrap.py
 
 # Create and activate isolated Python environment
 echo "Creating isolated Python environment..."
-python virtualenv.py --no-site-packages --distribute --prompt=\[namecheap\] .
+python virtualenv.py --no-site-packages --distribute --prompt=\[mvcom\] .
 rm -f *.tar.*
 source bin/activate
 

@@ -2,7 +2,7 @@ mode: production
 media_root: assets
 media_url: /assets
 base_url: /
-deploy_root: ../nginx/site
+deploy_root: ../build/static
 template: hyde.ext.templates.jinja.Jinja2Template
 plugins:
   - hyde.ext.plugins.meta.MetaPlugin

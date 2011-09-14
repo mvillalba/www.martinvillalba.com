@@ -4,10 +4,6 @@
 .installed.cfg
 virtualenv.py
 bootstrap.py
-src/.coverage
-docs/build
-docs/source/.buildinfo
-dist
 build
 bin
 develop-eggs
@@ -17,6 +13,4 @@ parts
 include
 lib
 lib64
-src/*.egg-info
-nginx/
 src/.hyde_deps

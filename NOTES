@@ -43,6 +43,16 @@ Thins to consider
  * On cooking, also post little techniques and tips, like how to crack an egg
    with your knuckles, or something.
 
+
+App Engine
+----------
+May need to work around limitations described in the following link at some
+point:
+http://code.google.com/appengine/docs/python/runtime.html#Quotas_and_Limits
+I may also need a small note in the README.md file to tell me what I need to
+change in order to add an article, a random (multi-lingual) page, a full new
+language, etc.
+
 Bugs
 ----
 Non-ASCII file names cause weird encoding errors everywhere. Unicode handling

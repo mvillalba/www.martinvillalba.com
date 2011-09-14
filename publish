@@ -1,0 +1,5 @@
+#!/bin/sh
+./make
+
+echo "Uploading application to Google App Engine..."
+python parts/gae/appcfg.py update ./build
