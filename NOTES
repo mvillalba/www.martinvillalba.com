@@ -45,6 +45,8 @@ Things to consider
  * How about Hyde plugins to calculate my current age, generate my affiliate
    and Web accounts pages, redirect (JS) based on language, and similar stuff.
  * "Photos" menu item, with integration to public Picasa albums.
+ * Add last-edited timestamp at the bottom of every page (taken from YAML meta
+   data on each page).
 
 
 App Engine
