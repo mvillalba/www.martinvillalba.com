@@ -9,11 +9,11 @@ handlers:
 - url: /
   static_files: static/index.html
   upload: static/index.html
-- url: /(.*)/
+- url: /([a-zA-Z]*)(/?)
   static_files: static/\1/index.html
-  upload: static/(.*)/index.html
-- url: /(.*)/(.*)/
+  upload: static/([a-zA-Z]*)/index.html
+- url: /([a-zA-Z]*)/([a-zA-Z]*)(/?)
   static_files: static/\1/\2/index.html
-  upload: static/(.*)/(.*)/index.html
+  upload: static/([a-zA-Z]*)/([a-zA-Z]*)/index.html
 - url: /
   static_dir: static
