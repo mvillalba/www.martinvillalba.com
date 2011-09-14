@@ -1,32 +1,36 @@
+www.martinvillalba.com
+======================
+
 Introduction
-==========
+------------
 These are the sources of my main personal website.  It gets turned into an
 actual website with the help of [Hyde](http://ringce.com/hyde "Hyde").
 
-You can reach me at: ehyde at codinghyde com
+You can reach me via e-Mail and Google Talk/Jabber at:
+    martin at NOSPAM martinvillalba.com
 
 
-Setup
-=====
+Editing
+-------
 The buildout environment should be entirely self-contained,
-web server included.
+testing web server included.
 
 If you want to modify the website, clone the repository and run:
-% source bootstrap && buildout
+% source bootstrap
+% buildout
 
-If you want to publish the website, push upstream (odin). Once uploaded, a
-server-side hook will run and do the following (publish.py):
- 1) Clone repository to temp directory.
- 2) Are buildout.cfg or nginx.conf any different from those used by the
-    currently running webserver instance?
- 3) If so, stop web-server, pull repository, and run buildout.
- 4) Else, just pull repository.
- 5) Run hyde.
- 6) Start web-server if not currently running.
+When done editing, check everything looks fine with the included nginx Web
+server by running the following and checking your browser:
+NGINX-CMD
+
+If everything looks fine, run publish.py to re-build and upload everything to
+  Google App Engine.
+
+Don't forget to push the changes upstream (GitHub).
 
 
 License
-==========
+-------
 Everything but the src/ directory is under the MIT/X11 license.
 All images, config files, and templates in src/ are licensed under the ???
 license. (TODO).
@@ -37,7 +41,7 @@ CC-BY-3.0: http://creativecommons.org/licenses/by/3.0/
 
 
 To Do
-==========
+-----
  - Layout
  - Index
  - About
