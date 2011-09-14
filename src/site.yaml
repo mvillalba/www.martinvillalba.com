@@ -32,9 +32,9 @@ context:
         -
           name: "Projects"
           url: /en/projects.html
-        -
-          name: "Blog"
-          url: /en/blog/
+#        -
+#          name: "Blog"
+#          url: /en/blog/
         -
           name: "Contact"
           url: /en/contact.html
@@ -48,9 +48,9 @@ context:
         -
           name: "Proyectos"
           url: /es/proyectos.html
-        -
-          name: "Blog"
-          url: /es/blog/
+#        -
+#          name: "Blog"
+#          url: /es/blog/
         -
           name: "Contáctame"
           url: /es/contáctame.html
