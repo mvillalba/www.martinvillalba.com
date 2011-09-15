@@ -53,7 +53,7 @@ Things to consider
    links should be generated via some plugin so that I can later on replace the
    backend with something else, should I ever need to.
  * Further investigate Google Analytics.
-
+ * If using S3, consider using CloudFront for improved speed.
 
 App Engine
 ----------
