@@ -13,4 +13,4 @@ parts
 include
 lib
 lib64
-src/.hyde_deps
+*.hyde_deps
