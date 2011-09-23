@@ -35,6 +35,9 @@ context:
 #          name: "Blog"
 #          url: /en/blog/
         -
+          name: "Reference data"
+          url: /en/reference.html
+        -
           name: "Contact"
           url: /en/contact.html
       es:
@@ -50,6 +53,9 @@ context:
 #        -
 #          name: "Blog"
 #          url: /es/blog/
+        -
+          name: "Datos de referencia"
+          url: /en/referencia.html
         -
           name: "Contáctame"
           url: /es/contactame.html
