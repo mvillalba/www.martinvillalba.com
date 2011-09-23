@@ -19,5 +19,4 @@ menu:
   -
     name: "Contact"
     url: /en/contact.html
-footer: "The contents of this website are licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">Creative Commons Attribution 3.0 Unported License</a>."
-
+footer: "The contents of this website are licensed under a [Creative Commons Attribution 3.0 Unported License{@rel=license}](http://creativecommons.org/licenses/by/3.0/)."

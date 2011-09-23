@@ -19,4 +19,5 @@ menu:
   -
     name: "Contáctame"
     url: /es/contactame.html
-footer: "El contenido de esta página web está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/deed.es_ES\">licencia Creative Commons Reconocimiento 3.0 Unported</a>."
+footer: "El contenido de esta página web está bajo una [licencia Creative Commons Reconocimiento 3.0 Unported{@rel=license}](http://creativecommons.org/licenses/by/3.0/deed.es_ES)"
+

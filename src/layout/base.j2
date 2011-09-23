@@ -53,8 +53,8 @@
         {%- endfilter %}
       </div>
       <hr />
-      <div class="span-24">
-        <p class="quiet footer">{{ resource.meta.footer }}</p>
+      <div class="span-24 quiet footer">
+        {% filter markdown -%}{{ resource.meta.footer }}{%- endfilter %}
       </div>
     </div>
 </body>
