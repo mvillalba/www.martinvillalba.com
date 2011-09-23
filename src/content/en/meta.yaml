@@ -1,2 +1,23 @@
 ---
 language: en
+menu:
+  -
+    name: "Home"
+    url: /en/
+  -
+    name: "About"
+    url: /en/about.html
+  -
+    name: "Projects"
+    url: /en/projects.html
+#  -
+#    name: "Blog"
+#    url: /en/blog/
+  -
+    name: "Reference data"
+    url: /en/reference.html
+  -
+    name: "Contact"
+    url: /en/contact.html
+footer: "The contents of this website are licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">Creative Commons Attribution 3.0 Unported License</a>."
+

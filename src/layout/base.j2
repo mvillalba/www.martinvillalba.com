@@ -33,7 +33,7 @@
 <body>
     <div class="container">
       <div class="span-21 quiet">
-        {% for item in menu[resource.meta.language] %}
+        {% for item in resource.meta.menu %}
         <a href="{{ item.url }}" class="large menu">{{ item.name }}</a>{% if not loop.last %}&nbsp;&nbsp;|&nbsp;{% endif %}
         {% endfor %}
       </div>
@@ -53,7 +53,7 @@
       </div>
       <hr />
       <div class="span-24">
-        <p class="quiet footer">{% if resource.meta.language is defined %}{{ footer[resource.meta.language] }}{% else %}{{ footer[en] }}{% endif %}</p>
+        <p class="quiet footer">{{ resource.meta.footer }}</p>
       </div>
     </div>
 </body>

@@ -1,2 +1,22 @@
 ---
 language: es
+menu:
+  -
+    name: "Portada"
+    url: /es/
+  -
+    name: "Sobre mí"
+    url: /es/sobre-mi.html
+  -
+    name: "Proyectos"
+    url: /es/proyectos.html
+#  -
+#    name: "Blog"
+#    url: /es/blog/
+  -
+    name: "Datos de referencia"
+    url: /en/referencia.html
+  -
+    name: "Contáctame"
+    url: /es/contactame.html
+footer: "El contenido de esta página web está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/deed.es_ES\">licencia Creative Commons Reconocimiento 3.0 Unported</a>."
