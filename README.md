@@ -16,12 +16,15 @@ The buildout environment should be entirely self-contained,
 testing web server included.
 
 If you want to modify the website, clone the repository and run:
-% source bootstrap 
-% buildout 
+
+1. % source bootstrap
+2. % buildout
+3. % source bin/activate
 
 When done editing, check everything looks fine with the development server by
 running the following and checking your browser:
-% ./develop 
+
+1. % ./develop 
 
 If everything looks fine, go ahead and run ./publish to re-build and upload
 everything to Google App Engine.
@@ -29,8 +32,9 @@ everything to Google App Engine.
 Don't forget to push the changes upstream (GitHub, Gitorious, odin).
 
 Backup GIT repositories:
-http://repo.or.cz/w/www.martinvillalba.com.git 
-https://gitorious.org/www-martinvillalba-com/www-martinvillalba-com 
+
+* http://repo.or.cz/w/www.martinvillalba.com.git
+* https://gitorious.org/www-martinvillalba-com/www-martinvillalba-com
 
 
 License
