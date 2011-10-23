@@ -36,6 +36,9 @@ Backup GIT repositories:
 * http://repo.or.cz/w/www.martinvillalba.com.git
 * https://gitorious.org/www-martinvillalba-com/www-martinvillalba-com
 
+If you need to upload large(-ish) media (photos, downloads, etc), upload to S3
+and link like: http://cdn.martinvillalba.com/S3-KEY.
+
 
 License
 -------
